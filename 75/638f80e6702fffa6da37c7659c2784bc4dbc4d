@@ -1,0 +1,22 @@
+packages/taro-runtime/tests/contains.spec.ts
+  s_c841ceb40cb443::t_2dfd3beb49c37f 125,138
+  s_c841ceb40cb443::t_c69e89204c6a63 1-124,126-137,139-149
+packages/taro-runtime/src/dom-external/node.ts
+  s_c841ceb40cb443::t_2dfd3beb49c37f 83-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "75638f80e6702fffa6da37c7659c2784bc4dbc4d",
+  "prompts": {},
+  "sessions": {
+    "s_c841ceb40cb443": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a176e9-0936-7980-8d58-8f9b97fdbdee",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Jarvis <mengda636431@gmail.com>"
+    }
+  }
+}
