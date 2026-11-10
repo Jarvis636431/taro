@@ -27,22 +27,23 @@ export class MovableArea {
 
   connectedCallback () {
     this.observer = new MutationObserver((mutations) => {
-      const childrenChanged = mutations.some(mutation => mutation.type === 'childList')
-      const styleChanged = mutations.some(mutation => mutation.attributeName === 'class' || mutation.attributeName === 'style')
-      if (!childrenChanged && !styleChanged) return
-
-      const added = childrenChanged ? this.viewsChanged() : []
-      const width = this.element.offsetWidth
-      const height = this.element.offsetHeight
-      const resized = width !== this.offset?.width || height !== this.offset?.height
-      this.offset = { width, height }
-      if (resized) this.updateArea()
-      else if (added.length) this.updateArea(added)
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === "class" || mutation.attributeName === "style") {
+          const offsetWidth = this.element.offsetWidth
+          const offsetHeight = this.element.offsetHeight
+          if (offsetWidth !== this.offset?.width || offsetHeight !== this.offset?.height) {
+            this.updateArea()
+          }
+          this.offset = {
+            width: offsetWidth,
+            height: offsetHeight
+          }
+        }
+      })
     })
 
     this.observer.observe(this.element, {
-      attributes: true,
-      childList: true
+      attributes: true
     })
   }
 
@@ -52,14 +53,15 @@ export class MovableArea {
 
   componentDidLoad () {
     this.viewsChanged()
-    this.offset = { width: this.element.offsetWidth, height: this.element.offsetHeight }
-    this.updateArea()
   }
 
   viewsChanged = () => {
-    const previous = this.views
-    this.views = Array.from(this.element.querySelectorAll('taro-movable-view-core'))
-    return this.views.filter(view => !previous.includes(view))
+    this.views = []
+    const elements = this.element.querySelectorAll('taro-movable-view-core')
+    Array.from(elements).forEach((element) => {
+      this.views.push(element)
+    })
+    this.updateArea()
   }
 
   handleTouchStart = (e: TouchEvent) => {
@@ -142,7 +144,7 @@ export class MovableArea {
     }
   }
 
-  updateArea = (views = this.views) => {
+  updateArea = () => {
     const computedStyle = window.getComputedStyle(this.element)
     const clientRect = this.element.getBoundingClientRect()
     const horizontal = ["Left", "Right"].map((e) => {
@@ -152,7 +154,7 @@ export class MovableArea {
       return parseFloat(computedStyle["border" + e + "Width"]) + parseFloat(computedStyle["padding" + e])
     })
 
-    views.forEach((element) => {
+    this.views.forEach((element) => {
       element["setParent"]?.({
         element: this.element,
         area: {
