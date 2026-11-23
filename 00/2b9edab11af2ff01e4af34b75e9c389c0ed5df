@@ -1,0 +1,23 @@
+packages/taro-h5/jest.config.ts
+  s_4ffa3d71a3e689::t_ed3f594071be2e 22
+packages/taro-h5/__tests__/files/saveFileToDisk.harmony.test.ts
+  s_4ffa3d71a3e689::t_f6ada715797c41 1-32
+packages/taro-platform-harmony-hybrid/src/api/apis/files/index.ts
+  s_4ffa3d71a3e689::t_88b217b02ddc10 11-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "002b9edab11af2ff01e4af34b75e9c389c0ed5df",
+  "prompts": {},
+  "sessions": {
+    "s_4ffa3d71a3e689": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2064e-3cf0-7383-8dd1-5157ed57a867",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Jarvis <mengda636431@gmail.com>"
+    }
+  }
+}
