@@ -1,0 +1,22 @@
+packages/taro-h5/src/api/media/recorder.ts
+  s_4ffa3d71a3e689::t_70e4328efc095a 18,99,104-109,120,124-125,152
+packages/taro-h5/__tests__/media/recorder.test.ts
+  s_4ffa3d71a3e689::t_eaa66850dbf313 6,18,23,28,33-36,68-69,79,95,104,109,116-154,172-189,200,206,228
+  s_4ffa3d71a3e689::t_c1014573ae078a 155-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "49ff8df3be4236e94b5d42915a8cf030f5ab81d1",
+  "prompts": {},
+  "sessions": {
+    "s_4ffa3d71a3e689": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2064e-3cf0-7383-8dd1-5157ed57a867",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Jarvis <mengda636431@gmail.com>"
+    }
+  }
+}
