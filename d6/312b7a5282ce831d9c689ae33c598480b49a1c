@@ -1,0 +1,27 @@
+packages/taro-h5/__tests__/media/previewMedia.test.ts
+  s_4ffa3d71a3e689::t_20c3bf68f40543 52-80,117-128,168-185
+packages/taro-components/__tests__/swiper.e2e.ts
+  s_4ffa3d71a3e689::t_626469340fe0a8 2,7-22,24-25,27-32
+  s_4ffa3d71a3e689::t_48801e5c9f7ffe 1,3-6,23,26,33-48
+packages/taro-h5/src/api/media/image/previewMedia.ts
+  s_4ffa3d71a3e689::t_bbb5383508d5a4 11-15,34,47-52,95-98,102,114-117,125,127-130,142,172-175,177-178
+  s_4ffa3d71a3e689::t_db94f7d3f59c0a 126
+packages/taro-components/src/components/swiper/swiper.tsx
+  s_4ffa3d71a3e689::t_bbb5383508d5a4 23,374-375,426
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "d6312b7a5282ce831d9c689ae33c598480b49a1c",
+  "prompts": {},
+  "sessions": {
+    "s_4ffa3d71a3e689": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2064e-3cf0-7383-8dd1-5157ed57a867",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Jarvis <mengda636431@gmail.com>"
+    }
+  }
+}
