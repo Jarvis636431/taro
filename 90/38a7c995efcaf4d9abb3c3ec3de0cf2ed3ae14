@@ -1,0 +1,32 @@
+packages/taro-h5/src/api/base/preloadAssets.ts
+  s_4ffa3d71a3e689::t_f92ff37e0a5c73 8,13,27,30,32
+packages/taro-h5/__tests__/base/preloadAssets.harmony.test.ts
+  s_4ffa3d71a3e689::t_a8d7639da3535f 1-30
+packages/taro/types/api/base/performance.d.ts
+  s_4ffa3d71a3e689::t_b045cba265e32a 237
+packages/taro-h5/__tests__/base/preloadAssets.test.ts
+  s_4ffa3d71a3e689::t_8841cc08562c99 67-69
+  s_4ffa3d71a3e689::t_f92ff37e0a5c73 20-40,60-66,71-77
+packages/taro-platform-harmony-hybrid/src/api/apis/base/performance.ts
+  s_4ffa3d71a3e689::t_f92ff37e0a5c73 3-4,31
+packages/taro-platform-harmony-hybrid/src/api/apis/base/index.ts
+  s_4ffa3d71a3e689::t_ca81e8fdd4289c 25
+packages/taro-h5/__tests__/helpers/loadHarmonyApi.ts
+  s_4ffa3d71a3e689::t_3d57571df80635 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "9038a7c995efcaf4d9abb3c3ec3de0cf2ed3ae14",
+  "prompts": {},
+  "sessions": {
+    "s_4ffa3d71a3e689": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2064e-3cf0-7383-8dd1-5157ed57a867",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Jarvis <mengda636431@gmail.com>"
+    }
+  }
+}
